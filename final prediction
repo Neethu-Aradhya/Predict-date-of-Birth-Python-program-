@@ -1,0 +1,20 @@
+def calculate_birthdate():
+  
+
+    print("Hi Bubby,\n i am going to Predict your date of birth using few simple math calculations.\n     Are u ready for it.....!!!!")
+    print("Think in mind ")
+    print("the number of the month when you was born i.e.  1 for Jan until 12 for Dec.:-> ")
+    print("double your month number and then add 5 to it.")
+    print("Now Multiply the answer in the previous step by 50.")
+    print("Add date of birth ")
+    print("for Example - month x 2 +5 x 50 + date")
+
+
+    result = int(input("Enter your final Result: "))
+    final_day = (result % 100) - 50
+    final_month = (result // 100) - 2
+    
+    print("Your date of birth is:\n your Month is {} \n your date is {}".format(final_month, final_day))
+    print("Isn’t it awesome!!")
+# Call the function
+calculate_birthdate()
